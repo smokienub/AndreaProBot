@@ -1,4 +1,4 @@
-### @CinderellaProBot // http://www.telegram.dog/CinderellaProBot
+### @MissAndrea_Bot // http://www.telegram.dog/MissAndrea_Bot
 > with HunterxHunter theme.
 
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)  
@@ -7,17 +7,17 @@
 Modular Telegram bot for managing your groups with a extras features with HunterxHunter theme.
 
 <p align="center">
-  <a href="https://github.com/Sur-vivor/CinderellaProBot/fork">
-    <img src="https://img.shields.io/github/forks/Sur-vivor/CinderellaProBot?label=Fork&style=social">
+  <a href="https://github.com/DONOFTELEGRAM/AndreaProBot/fork">
+    <img src="https://img.shields.io/github/forks/DONOFTELEGRAM/AndreaProBot?label=Fork&style=social">
     
   </a>
-  <a href="https://github.com/Sur-vivor/CinderellaProBot">
+  <a href="https://github.com/DONOFTELEGRAM/AndreaProBot">
     <img src="https://img.shields.io/github/stars/Sur-vivor/CinderellaProBot?style=social">
   </a>
 </p>
 
 ### Click Below Image to Deploy
-[![Deploy](https://telegra.ph/file/511ad504656e712b88235.jpg)](https://heroku.com/deploy?template=https://github.com/Sur-vivor/CinderellaProBot.git)
+[![Deploy](https://telegra.ph/file/3055edd96c58853e03f15.jpg)](https://heroku.com/deploy?template=https://github.com/DONOFTELEGRAM/AndreaProBot.git)
 
 ### Configuration
 
@@ -37,8 +37,8 @@ from cinderella.sample_config import Config
 
 
 class Development(Config):
-    OWNER_ID = 1118936839  # my telegram ID
-    OWNER_USERNAME = "Sur_vivor"  # my telegram username
+    OWNER_ID = 989037511  # my telegram ID
+    OWNER_USERNAME = "DON_OF_TELEGRAM"  # my telegram username
     API_KEY = "your bot api key"  # my api key, as provided by the botfather
     SQLALCHEMY_DATABASE_URI = 'postgresql://username:password@localhost:5432/database'  # sample db credentials
     MESSAGE_DUMP = '-1234567890' # some group chat that your bot is a member of
