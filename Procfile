@@ -1,2 +1,2 @@
-worker: python3 -m Cinderella
+worker: python3 -m cinderella
 ps:scale worker=1
