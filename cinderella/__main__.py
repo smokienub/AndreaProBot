@@ -278,10 +278,10 @@ def get_help(bot: Bot, update: Update):
     # ONLY send help in PM
     if chat.type != chat.PRIVATE:
 
-        update.effective_message.reply_text("Contact me in PM to get the list of possible commands.",
+        update.effective_message.reply_text("Contact me in PM to get the list of possible commands💃.",
                                             reply_markup=InlineKeyboardMarkup(
                                                 [[InlineKeyboardButton(text="Help❓",url="t.me/{}?start=help".format(bot.username))],  
-                                                [InlineKeyboardButton(text="Contact Creator 🚸",url="https://t.me/DON_OF_TELEGRAM")]]))
+                                                [InlineKeyboardButton(text="🚸 Contact Creator 🚸",url="https://t.me/DON_OF_TELEGRAM")]]))
         return
 
     elif len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):
