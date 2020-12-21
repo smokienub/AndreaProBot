@@ -59,7 +59,7 @@ def vercheck() -> str:
 
 SOURCE_STRING = """
 
-⚡You Can Clone Me [Here](https://t.me/DON_OF_TELEGRAM)
+⚡You Can Contact me [Here](https://t.me/DON_OF_TELEGRAM)
 """
 
 
