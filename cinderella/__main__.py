@@ -165,7 +165,7 @@ def start(bot: Bot, update: Update, args: List[str]):
             send_start(bot, update)
     else:
         update.effective_message.reply_text("Heya,{} Here..\nHow can I help you?🙂".format(bot.first_name),reply_markup=InlineKeyboardMarkup(
-                                                [[InlineKeyboardButton(text="Help❓",url="t.me/{}?start=help".format(bot.username))]]))
+                                                [[InlineKeyboardButton(text="Help❔",url="t.me/{}?start=help".format(bot.username))]]))
 
 def send_start(bot, update):
     #Try to remove old message
