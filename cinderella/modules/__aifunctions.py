@@ -1,16 +1,18 @@
 # 🙈 Give me ⭐️ before kanging code
 # © @Mr_Dark_Prince 🌚
+# Installed by @mr_srlock
+# © @mr_srlock
 
 import requests
 url = "https://iamai.p.rapidapi.com/ask"
-from MashaRoBot import telethn, OWNER_ID
-from MashaRoBot.events import register
+from cinderella import client, OWNER_ID
+from cinderella.events import register
 from telethon import events
 from telethon import types
 from telethon.tl import functions
 import asyncio, os
 
-@register(pattern="Masha (.*)")
+@register(pattern="Andrea (.*)")
 async def hmm(event):
   test = event.pattern_match.group(1)
   r = ('\n    \"consent\": true,\n    \"ip\": \"::1\",\n    \"question\": \"{}\"\n').format(test)
@@ -31,22 +33,22 @@ async def hmm(event):
   if "no no" in result:
    pro = "I am fairly yound and I was made by @Mr_Dark_Prince."
    try:
-      async with telethn.action(event.chat_id, 'typing'):
+      async with client.action(event.chat_id, 'typing'):
            await asyncio.sleep(2)
            await event.reply(pro)
    except CFError as e:
            print(e)
   elif "ann" in result:
-   pro = "My name is Masha"
+   pro = "My name is Andrea"
    try:
-      async with telethn.action(event.chat_id, 'typing'):
+      async with client.action(event.chat_id, 'typing'):
            await asyncio.sleep(2)
            await event.reply(pro)
    except CFError as e:
            print(e)
   else:
     try:
-      async with telethn.action(event.chat_id, 'typing'):
+      async with client.action(event.chat_id, 'typing'):
            await asyncio.sleep(2)
            await event.reply(result)
     except CFError as e:
