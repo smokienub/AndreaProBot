@@ -5,12 +5,12 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CallbackQueryHandler, run_async
 from telegram.utils.helpers import mention_html
 
-import MashaRoBot.modules.sql.approve_sql as sql
-from MashaRoBot import DRAGONS, dispatcher
-from MashaRoBot.modules.disable import DisableAbleCommandHandler
-from MashaRoBot.modules.helper_funcs.chat_status import user_admin
-from MashaRoBot.modules.helper_funcs.extraction import extract_user
-from MashaRoBot.modules.log_channel import loggable
+import cinderella.modules.sql.approve_sql as sql
+from cinderella import SUDO_USERS, dispatcher
+from cinderella.modules.disable import DisableAbleCommandHandler
+from cinderella.modules.helper_funcs.chat_status import user_admin
+from cinderella.modules.helper_funcs.extraction import extract_user
+from cinderella.modules.log_channel import loggable
 
 
 @loggable
@@ -204,11 +204,11 @@ Maybe not enough to make them admin, but you might be ok with locks, blacklists,
 That's what approvals are for - approve of trustworthy users to allow them to send 
 
 *Admin commands:*
-❍ /approval*:* Check a user's approval status in this chat.
-❍ /approve*:* Approve of a user. Locks, blacklists, and antiflood won't apply to them anymore.
-❍ /unapprove*:* Unapprove of a user. They will now be subject to locks, blacklists, and antiflood again.
-❍ /approved*:* List all approved users.
-❍ /unapproveall*:* Unapprove *ALL* users in a chat. This cannot be undone.
+ /approval*:* Check a user's approval status in this chat.
+ /approve*:* Approve of a user. Locks, blacklists, and antiflood won't apply to them anymore.
+ /unapprove*:* Unapprove of a user. They will now be subject to locks, blacklists, and antiflood again.
+ /approved*:* List all approved users.
+ /unapproveall*:* Unapprove *ALL* users in a chat. This cannot be undone.
 """
 
 APPROVE = DisableAbleCommandHandler("approve", approve)
