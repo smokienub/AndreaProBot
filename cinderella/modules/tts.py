@@ -76,6 +76,6 @@ __help__ = """ Text to speech
 
 """
 
-__mod_name__ = "Text To Chat"
+__mod_name__ = "Text To Speech"
 
 dispatcher.add_handler(CommandHandler('tts', tts, pass_args=True))
