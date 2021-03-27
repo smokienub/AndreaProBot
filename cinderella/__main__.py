@@ -281,7 +281,7 @@ def get_help(bot: Bot, update: Update):
         update.effective_message.reply_text("Contact me in PM to get the list of possible commands",
                                             reply_markup=InlineKeyboardMarkup(
                                                 [[InlineKeyboardButton(text="Help❔",url="t.me/{}?start=help".format(bot.username))],  
-                                                [InlineKeyboardButton(text="Support 📢",url="https://t.me/DON_OF_TELEGRAM")]]))
+                                                [InlineKeyboardButton(text="Support 📢",url="https://t.me/Andrea_Updates")]]))
         return
 
     elif len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):
