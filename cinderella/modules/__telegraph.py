@@ -1,4 +1,4 @@
-from cindrella.events import register
+from cinderella.events import register
 from cinderella import client as tbot
 TMP_DOWNLOAD_DIRECTORY = "./"
 from telethon import events
