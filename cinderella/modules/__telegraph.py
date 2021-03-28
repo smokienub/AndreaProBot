@@ -1,18 +1,18 @@
-from MashaRoBot.events import register
-from MashaRoBot import telethn as tbot
+from cindrella.events import register
+from cinderella import client as tbot
 TMP_DOWNLOAD_DIRECTORY = "./"
 from telethon import events
 import os
 from PIL import Image
 from datetime import datetime
 from telegraph import Telegraph, upload_file, exceptions
-darkprince = "MASHA"
+Mr_srlock = "Elizabeth"
 telegraph = Telegraph()
 r = telegraph.create_account(short_name=darkprince)
 auth_url = r["auth_url"]
 
 
-@register(pattern="^/t(m|t) ?(.*)")
+@register(pattern="^/tp(m|t) ?(.*)")
 async def _(event):
     if event.fwd_from:
         return
