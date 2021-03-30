@@ -82,7 +82,7 @@ if START_IMG is None:
 else:
   img = START_IMG    
     
-for module_name in ALL_MODULES:
+for module_name in ALL _MODULES:
     imported_module = importlib.import_module("cinderella.modules." + module_name)
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__
