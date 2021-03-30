@@ -1,5 +1,5 @@
-from MashaRoBot.events import register
-from MashaRoBot import telethn as tbot
+from cinderella.events import register
+from cinderella import client as tbot
 TMP_DOWNLOAD_DIRECTORY = "./"
 from telethon import events
 import os
@@ -12,7 +12,7 @@ r = telegraph.create_account(short_name=darkprince)
 auth_url = r["auth_url"]
 
 
-@register(pattern="^/t(m|xt) ?(.*)")
+@register(pattern="^/tp(m|xt) ?(.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -81,8 +81,8 @@ def resize_image(image):
 
 __help__ = """
 I can upload files to Telegraph
- ❍ /tm :Get Telegraph Link Of Replied Media
- ❍ /txt :Get Telegraph Link of Replied Text
+ /tpm :Get Telegraph Link Of Replied Media
+ /tpt :Get Telegraph Link of Replied Text
 """
 
 __mod_name__ = "T GRAPH"
