@@ -258,9 +258,9 @@ def start(bot: Bot, update: Update, args: List[str]):
 
     else:
 
-        update.effective_message.reply_text("Heya,{} Here..\nHow can I help you? 🙂".format(bot.first_name),reply_markup=InlineKeyboardMarkup(
+        update.effective_message.reply_text("Heya,{} Here..\nHow can I help you?".format(bot.first_name),reply_markup=InlineKeyboardMarkup(
 
-                                                [[InlineKeyboardButton(text="⚜️Help",url="t.me/{}?start=help".format(bot.username))]]))
+                                                [[InlineKeyboardButton(text="Help ❔",url="t.me/{}?start=help".format(bot.username))]]))
 
 def send_start(bot, update):
 
@@ -282,9 +282,9 @@ def send_start(bot, update):
 
     text = PM_START_TEXT
 
-    keyboard = [[InlineKeyboardButton(text="🤝Help",callback_data="help_back"),InlineKeyboardButton(text="🛡Creator🛡",url="https://t.me/Surv_ivor")]]
+    keyboard = [[InlineKeyboardButton(text="Help ❔",callback_data="help_back"),InlineKeyboardButton(text="Support 📢",url="https://t.me/AndreaSupportChat")]]
 
-    keyboard += [[InlineKeyboardButton(text="🌐Connect Group", callback_data="main_connect"),InlineKeyboardButton(text="⚜️Add Me⚜️",url="t.me/{}?startgroup=true".format(bot.username))]]
+    keyboard += [[InlineKeyboardButton(text="Connect 🎗️", callback_data="main_connect"),InlineKeyboardButton(text="⚜️Add Me 🎉",url="t.me/{}?startgroup=true".format(bot.username))]]
 
     update.effective_message.reply_photo(img, PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_NAME, OWNER_ID), 
 
@@ -378,7 +378,7 @@ def help_button(bot: Bot, update: Update):
 
                                      reply_markup=InlineKeyboardMarkup(
 
-                                         [[InlineKeyboardButton(text="🚶🏻‍♂️Back🚶🏻‍♂️", callback_data="help_back")]]))
+                                         [[InlineKeyboardButton(text="Go back  callback_data="help_back")]]))
 
         elif prev_match:
 
@@ -452,9 +452,9 @@ def get_help(bot: Bot, update: Update):
 
                                             reply_markup=InlineKeyboardMarkup(
 
-                                                [[InlineKeyboardButton(text="⚜️Help",url="t.me/{}?start=help".format(bot.username))],  
+                                                [[InlineKeyboardButton(text="Help ❔",url="t.me/{}?start=help".format(bot.username))],  
 
-                                                [InlineKeyboardButton(text="🛡Contact Creator",url="https://t.me/Surv_ivor")]]))
+                                                [InlineKeyboardButton(text="Support 📢",url="https://t.me/AndreaSupportChat")]]))
 
         return
 
@@ -466,7 +466,7 @@ def get_help(bot: Bot, update: Update):
 
                + HELPABLE[module].__help__
 
-        send_help(chat.id, text, InlineKeyboardMarkup([[InlineKeyboardButton(text="🚶‍♂️Back🚶‍♂️", callback_data="help_back")]]))
+        send_help(chat.id, text, InlineKeyboardMarkup([[InlineKeyboardButton(text="Go Back", callback_data="help_back")]]))
 
     else:
 
