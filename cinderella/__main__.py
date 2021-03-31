@@ -96,9 +96,9 @@ def vercheck() -> str:
 
 SOURCE_STRING = """
 
-⚡I'm built in python3, using the python-telegram-bot library, and am fully opensource - you can find what makes me tick [here](https://github.com/Sur-vivor/CinderellaProBot)
+⚡I'm built in python3, using the python-telegram-bot library, and am fully opensource - you can find what makes me tick [Contact Owner](https://t.me/TERA_BAAP_VILLAIN_XD)
 
-⚡You Can Clone Me [Here](https://heroku.com/deploy?template=https://github.com/Sur-vivor/CinderellaProBot.git)
+⚡You Can Contact Me [Here](https://t.me/TERA_BAAP_VILLAIN_XD)
 
 """
 
